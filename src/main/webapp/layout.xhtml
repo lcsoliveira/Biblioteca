@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:p="http://primefaces.org/ui">
+
+  <h:head>
+    <title>
+   	Biblioteca Dextraining
+    </title> 
+  </h:head>
+  
+  <h:body>  
+    
+    <div>
+      <ui:insert name="cabecalho">
+       Bem vindo  
+      </ui:insert>     
+    </div>
+     
+     <div>
+	  <ui:insert name="menu">   	
+	 	 <p:menubar>
+	        <p:submenu label="Biblioteca" icon="ui-icon-document">
+	            <p:submenu label="Livro" icon="ui-icon-contact">
+	                <p:menuitem value="Novo" url="/novoLivro.jsf" />
+	                <p:menuitem value="Listar" url="/listagemLivro.jsf" />
+	            </p:submenu>
+	        </p:submenu>
+    	</p:menubar>
+	  </ui:insert>     
+     </div>
+      
+    <div> 
+    	<ui:insert name="conteudo"/>
+    </div>  
+    
+    <div>
+      <ui:insert name="rodape">
+       RODAPÉ
+      </ui:insert>     
+    </div> 
+  </h:body> 
+</html>
